@@ -1,0 +1,42 @@
+['早上好 #P',
+'现在我有#O',
+'我很喜欢#O',
+'但是',
+'#S',
+'比#O',
+'#S',
+'#S',
+'我最喜欢',
+'所以…现在是音乐时间',
+'准备 1 2 3',
+'#T以后',
+'#S',
+'#S',
+'#S',
+'不要忘记',
+'不要错过',
+'记得去电影院看#S',
+'因为非常好#Stype'
+'#V非常好'
+'差不多一样#O',
+'再见',]
+
+function binchilling(n, b) {
+    paragraphs = Math.floor((Math.random() * 3 + 3))
+    var i
+    var answer = "<b>耿爽：</b>"
+    var index = Math.floor((Math.random() * head.length))
+    answer += head[index]
+    shuffle(sentences)
+    index=0
+    for (i = 0; i < paragraphs; i++) {
+        length = Math.floor((Math.random() * 3 + 3))
+        for (j = 0; j < length; j++) {
+            answer += sentences[index++]
+        }
+        answer += "<br><br>"
+    }
+    answer = answer.replace(/#N/g, n)
+    answer = answer.replace(/#B/g, b)
+    return answer
+}

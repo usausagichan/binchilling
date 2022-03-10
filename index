@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#333333">
+    <title>Binchilling Emulator</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
+    <link href="appearance.css" rel="stylesheet">
+    <link href="reset-form.css?v2" rel="stylesheet">
+    <link href="base.css?v2" rel="stylesheet">
+</head>
+
+<body>
+    <h1>冰淇淋產生器</h1>
+    <small><h3>一起來吃Binxilling</h3></small>
+    <class="label" id="label-1" >對誰宣傳：</class><input type="text" id="who" placeholder="中国">
+    <class="label" id="label-2" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什麼比冰淇淋更棒：</class><input type="text" id="what" placeholder="速度与激情9">
+    <p></p>
+    <class="label" id="label-3" >在哪裏：</class><input type="text" id="where" placeholder="电影院">
+    <class="label" id="label-4" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;什麼時候：</class><input type="text" id="when" placeholder="两个礼拜">
+    <p></p>
+    <class="label" id="label-5" >是什麼性質：</class><input type="text" id="how" placeholder="电影">
+    <class="label" id="label-6" >&nbsp;&nbsp;什麼非常好：</class><input type="text" id="howhow"  placeholder="动作">
+    <p></p>
+    <div class="actions">
+        <div class="button clickable" id="btn-generate" onclick="generate()">binchilling</div>
+    </div>
+    <p><h2>產生結果</h2></p>
+    <div id="text"></div>
+    <script src="binchilling.js"></script>
+</body>
+
+</html>
